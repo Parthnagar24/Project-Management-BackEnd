@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Management Backend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #24292f;
+            --accent: #007bff;
+            --bg: #f4f6fb;
+            --card: #fff;
+            --radius: 12px;
+            --shadow: 0 4px 20px rgba(0,0,0,0.07);
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: var(--primary);
+            color: #fff;
+            padding: 24px 0 10px 0;
+            text-align: center;
+            border-radius: 0 0 var(--radius) var(--radius);
+            box-shadow: var(--shadow);
+        }
+        .header .icon {
+            font-size: 48px;
+            margin-bottom: 8px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto 0 auto;
+            background: var(--card);
+            padding: 36px 32px 24px 32px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        h1 {
+            color: var(--primary);
+            margin: 0 0 16px 0;
+        }
+        p {
+            color: #555;
+        }
+        ul {
+            margin-top: 12px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 7px;
+        }
+        .github-link {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 22px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            box-shadow: 0 2px 6px rgba(0,123,255,0.13);
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .github-link:hover {
+            background: #0056b3;
+            box-shadow: 0 4px 12px rgba(0,123,255,0.18);
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 28px 0 20px 0;
+        }
+        h3 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        pre {
+            background: #f0f2f6;
+            padding: 12px 18px;
+            border-radius: 7px;
+            font-size: 15px;
+            color: #333;
+            overflow-x: auto;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 18px 8px 18px 8px; }
+            .header { padding: 18px 0 8px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="icon">🗂️</div>
+        <h1>Project Management Backend</h1>
+        <div>A powerful API for managing projects, tasks, and users</div>
+    </div>
+    <div class="container">
+        <p>
+            This repository contains the backend code for a Project Management System.<br>
+            It provides RESTful APIs for managing projects, tasks, users, and more.
+        </p>
+        <ul>
+            <li>Built with <strong>Node.js</strong> and <strong>Express</strong></li>
+            <li>Uses <strong>MongoDB</strong> as the database</li>
+            <li>Features user authentication &amp; authorization</li>
+            <li>Project and task management endpoints</li>
+        </ul>
+        <a href="https://github.com/Parthnagar24/Project-Management-BackEnd/tree/main" class="github-link" target="_blank">View on GitHub</a>
+        <hr>
+        <h3>Quick Start</h3>
+        <pre>
+git clone https://github.com/Parthnagar24/Project-Management-BackEnd.git
+cd Project-Management-BackEnd
+npm install
+npm start
+        </pre>
+        <p>
+            For API details and usage, refer to the documentation in the repository.
+        </p>
+    </div>
+</body>
+</html>
